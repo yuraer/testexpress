@@ -3,6 +3,7 @@
 global-reset()
 main-color = #fa5b4d
 background-color = #faf9f0
+main-border = 1px dotted #ccc
 
 body
   font-family 'Georgia'
@@ -33,19 +34,20 @@ header
 .inpLogin
   width 200px
 
-.divcard
-  width 200px
-  border 1px dotted #ccc
-  text-align right
-  background-color orange
-
-.spancard 
-  float left
-
-.divMain
-  border 1px dotted #ccc
+table
+  border main-border
   width 100%
   height 100%
-  position absolute top 0
-  left 0
-  overflow auto
+
+td  
+  border main-border
+  text-align center
+
+th
+  border main-border
+  text-align center
+  font-weight bold
+
+caption
+  text-align center
+  font-weight bold

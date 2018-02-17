@@ -118,20 +118,21 @@ header {
 .inpLogin {
   width: 200px;
 }
-.divcard {
-  width: 200px;
-  border: 1px dotted #ccc;
-  text-align: right;
-  background-color: #ffa500;
-}
-.spancard {
-  float: left;
-}
-.divMain {
+table {
   border: 1px dotted #ccc;
   width: 100%;
   height: 100%;
-  position: absolute top 0;
-  left: 0;
-  overflow: auto;
+}
+td {
+  border: 1px dotted #ccc;
+  text-align: center;
+}
+th {
+  border: 1px dotted #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+caption {
+  text-align: center;
+  font-weight: bold;
 }
