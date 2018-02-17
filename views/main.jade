@@ -1,22 +1,23 @@
 extend layout
 
 block content
-  
-  h1 #{title}
-  - var x = 5;
-    div
-      ul
-        - for (var i=1; i<=x; i++) {
-          li= i + ". Item"
-        - }
-  br      
+  .divMain
+    h1 #{title}
+    - var x = 5;
+      .widget
+        ul
+          - for (var i=1; i<=x; i++) {
+            li= i + ". Item"
+          - }
+    br      
 
-  - var droids = ["R2D2", "C3PO", "BB8"];
-  div
-    h1= droids
-    for name in droids
-      div.divcard
-        span.spancard= name
-        button.btnDel X                      
+    - 
+    .widget
+      h1 Выписка
+      for name in droids
+        .divcard
+          span.spancard= name.value
+          span.date= name.date
+          button.btnDel X                      
         
 

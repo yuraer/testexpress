@@ -1,12 +1,10 @@
-/*
- * Module dependencies
- */
-var express = require('express')
+"use strict";
+
+const express = require('express')
   , stylus = require('stylus')
   , nib = require('nib')
 
-
-var app = express()
+const app = express()
 
 function compile(str, path) {
   return stylus(str)
@@ -32,7 +30,12 @@ app.get('/', function (req, res) {
 
 app.get('/main', function (req, res) {
   res.render('main',
-  { title : 'Main' }
+  { title : 'Main',
+    droids: [
+      {"date": "01.01.2018", "value":"150"},
+      {"date": "02.01.2018", "value":"100"},
+      {"date": "03.01.2018", "value":"200"}
+    ]}
   )
 })
 
