@@ -32,7 +32,7 @@ app.get('/main', function (req, res) {
   res.render('main',
   { title : 'Main',
     droids: [
-      {"date": "01.01.2018", "value":"150"},
+      {"date": "01.01.2018", "value" :"150"},
       {"date": "02.01.2018", "value":"100"},
       {"date": "03.01.2018", "value":"200"}
     ]}
